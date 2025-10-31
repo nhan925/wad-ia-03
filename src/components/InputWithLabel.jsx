@@ -2,6 +2,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { TooltipWrapper } from "./TooltipWrapper"
 
+// An input component with an associated label and optional tooltip
 export const InputWithLabel = ({
   id,
   label,

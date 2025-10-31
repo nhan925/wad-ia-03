@@ -1,5 +1,6 @@
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip.jsx';
 
+// A wrapper component to add tooltip functionality to any child component
 export const TooltipWrapper = ({ tooltipText, children, position = "bottom" }) => {
     return (
         <Tooltip>

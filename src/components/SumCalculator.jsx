@@ -14,8 +14,8 @@ import { RotateCcw } from 'lucide-react';
 import { TooltipWrapper } from '@/components/ToolTipWrapper.jsx';
 import { useCalculator } from '@/hooks/useCalculator.js';
 import { ResultDialog } from '@/components/ResultDialog.jsx';
-import { ThemeToggle } from '@/components/ThemeToggle.jsx';
 
+// The main component for the Sum Calculator
 export const SumCalculator = () => {
     const {
         firstNumber,

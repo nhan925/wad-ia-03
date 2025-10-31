@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { TooltipWrapper } from "@/components/TooltipWrapper"
 import { useEffect, useState } from "react"
 
+// A button component to toggle between light, dark, and system themes
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)

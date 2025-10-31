@@ -8,6 +8,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog"
 
+// A dialog component to display the result of the sum calculation
 export function ResultDialog({ isOpen, onClose, firstNumber, secondNumber, result }) {
   return (
     <AlertDialog open={isOpen} onOpenChange={onClose}>
