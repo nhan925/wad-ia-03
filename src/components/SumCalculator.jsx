@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
   Card,
   CardContent,
@@ -15,6 +14,7 @@ import { RotateCcw } from 'lucide-react';
 import { TooltipWrapper } from '@/components/ToolTipWrapper.jsx';
 import { useCalculator } from '@/hooks/useCalculator.js';
 import { ResultDialog } from '@/components/ResultDialog.jsx';
+import { ThemeToggle } from '@/components/ThemeToggle.jsx';
 
 export const SumCalculator = () => {
     const {
@@ -49,7 +49,7 @@ export const SumCalculator = () => {
 
     return (
         <>
-            <Card className="w-[400px] mx-auto shadow-lg my-8">
+            <Card className="w-[80vw] md:w-[400px] mx-8 shadow-lg my-8 min-w-3xs">
                 <CardHeader>
                     <CardTitle className="text-center text-2xl">Sum Calculator</CardTitle>
                     <CardDescription className="text-center">Calculate the sum of two numbers</CardDescription>
@@ -66,7 +66,7 @@ export const SumCalculator = () => {
                                 onChange={input.onChange}
                                 placeholder={input.placeholder}
                                 tooltipText={`Input a valid number (max ${maxInputLength} digits).\nDecimals and negative numbers are allowed.`}
-                                tooltipPosition="right"
+                                tooltipPosition="bottom"
                             />
                         ))}
                     </form>

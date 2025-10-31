@@ -50,15 +50,21 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+html {
+  min-height: 100dvh;
+  width: 100%;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+html.dark {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  background: #fc5c7d;
-  background: -webkit-linear-gradient(to right, #fc5c7d, #6a82fb);
-  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+  background: transparent;
+  /* ensure body doesn't override */
 }
 
 @media (prefers-color-scheme: light) {
